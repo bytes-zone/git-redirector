@@ -11,6 +11,8 @@ daemon off;
 error_log /dev/stdout info;
 pid /dev/null;
 
+events {}
+
 http {
     sendfile on;
     tcp_nopush on;
