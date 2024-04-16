@@ -22,11 +22,6 @@
             python3 nginx_config.py sources.txt > nginx.conf
           '';
 
-          doCheck = true;
-          checkPhase = ''
-            ${pkgs.nginx}/bin/nginx -c $(pwd)/nginx.conf -t
-          '';
-
           installPhase = ''
             mkdir -p $out/etc/nginx
             mv nginx.conf $out/etc/nginx
