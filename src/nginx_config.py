@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+import sys
 
-with open('sources.txt', 'r') as fh:
+with open(sys.argv[1], 'r') as fh:
     sources = [line.split() for line in fh.read().strip().split('\n')]
 
 # preamble
