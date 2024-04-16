@@ -26,10 +26,11 @@ http {
 
         location / {
             return 301 $scheme://github.com$request_uri;
-        }
+        }\
 """)
 
 for (src, dest) in sources:
+    print()
     print(f"        location ~* ^/{src}$ {{")
     print(f"            return 301 https://github.com/{dest};")
     print("        }")
