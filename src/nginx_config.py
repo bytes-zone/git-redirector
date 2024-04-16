@@ -30,6 +30,10 @@ http {
 """)
 
 for (src, dest) in sources:
+    print(f"        location ~* ^/{src}$ {{")
+    print(f"            return 301 https://github.com/{dest};")
+    print("        }")
+    print()
     print(f"        location ~* ^/{src}/commit/([0-9a-f]+)$ {{")
     print(f"            return 301 https://github.com/{dest}/commit/$1;")
     print("        }")
