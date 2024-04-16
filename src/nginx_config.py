@@ -6,18 +6,31 @@ with open(sys.argv[1], 'r') as fh:
 
 # preamble
 print("""\
-server {
-    listen 80;
-    server_name git.bytes.zone;
+user nobody nobody;
+daemon off;
+error_log /dev/stdout info;
+pid /dev/null;
 
-    location / {
-        return 301 $scheme://github.com$request_uri;
-    }
+http {
+    sendfile on;
+    tcp_nopush on;
+    tcp_nodelay on;
+
+    access_log /dev/stdout;
+
+    server {
+        listen 80;
+        server_name git.bytes.zone;
+
+        location / {
+            return 301 $scheme://github.com$request_uri;
+        }
 """)
 
 for (src, dest) in sources:
-    print(f"    location ~* ^/{src}/commit/([0-9a-f]+)$ {{")
-    print(f"        return 301 https://github.com/{dest}/commit/$1;")
-    print("    }")
+    print(f"        location ~* ^/{src}/commit/([0-9a-f]+)$ {{")
+    print(f"            return 301 https://github.com/{dest}/commit/$1;")
+    print("        }")
 
+print("    }")
 print("}")
