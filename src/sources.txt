@@ -2,6 +2,7 @@ brian/bad-datalog BrianHicks/bad-datalog
 brian/dotfiles.nix BrianHicks/dotfiles.nix
 brian/elm-forbid-import BrianHicks/elm-forbid-import
 brian/elo-anything bytes-zone/elo-anything
+brian/inky-pal BrianHicks/inky-pal
 brian/montage BrianHicks/montage
 brian/nates-mazes bytes-zone/mazes
 brian/omnifocus-scripts BrianHicks/omnifocus-scripts
