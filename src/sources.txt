@@ -1,5 +1,6 @@
 brian/bad-datalog BrianHicks/bad-datalog
 brian/dotfiles.nix BrianHicks/dotfiles.nix
+brian/elm-comment-layout-exploration BrianHicks/elm-comment-layout-exploration
 brian/elm-forbid-import BrianHicks/elm-forbid-import
 brian/elm-wave-function-collapse BrianHicks/elm-wave-function-collapse
 brian/elo-anything bytes-zone/elo-anything
