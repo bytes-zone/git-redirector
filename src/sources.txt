@@ -2,5 +2,6 @@ brian/dotfiles.nix BrianHicks/dotfiles.nix
 brian/elo-anything bytes-zone/elo-anything
 brian/montage BrianHicks/montage
 brian/nates-mazes bytes-zone/mazes
+brian/omnifocus-scripts BrianHicks/omnifocus-scripts
 bytes.zone/bytes.zone bytes-zone/bytes-zone
 bytes.zone/infrastructure bytes-zone/infrastructure.v1
