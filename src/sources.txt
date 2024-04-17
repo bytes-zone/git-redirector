@@ -8,6 +8,7 @@ brian/inky-pal BrianHicks/inky-pal
 brian/montage BrianHicks/montage
 brian/nates-mazes bytes-zone/mazes
 brian/notes BrianHicks/notes-app-2020
+brian/obsidian-pagerank BrianHicks/obsidian-pagerank
 brian/omnifocus-scripts BrianHicks/omnifocus-scripts
 brian/similar-sort BrianHicks/similar-sort
 bytes.zone/bytes.zone bytes-zone/bytes-zone
