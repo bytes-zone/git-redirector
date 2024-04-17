@@ -1,3 +1,4 @@
+brian/dotfiles.nix BrianHicks/dotfiles.nix
 brian/elo-anything bytes-zone/elo-anything
 brian/nates-mazes bytes-zone/mazes
 bytes.zone/bytes.zone bytes-zone/bytes-zone
