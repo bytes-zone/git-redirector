@@ -24,6 +24,11 @@ http {
         listen 80;
         server_name git.bytes.zone;
 
+        location /health {
+            return 200 'OK';
+            add_header Content-Type text/plain;
+        }
+
         location / {
             return 301 $scheme://github.com$request_uri;
         }\
