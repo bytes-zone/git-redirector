@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v5
       - uses: DeterminateSystems/nix-installer-action@v19
       - uses: DeterminateSystems/magic-nix-cache-action@v13
-      - uses: nixbuild/nixbuild-action@v20
+      - uses: nixbuild/nixbuild-action@v22
         with:
           nixbuild_token: ${{ secrets.NIXBUILD_TOKEN }}
           generate_summary_for: 'workflow'
