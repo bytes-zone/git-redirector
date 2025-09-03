@@ -6,8 +6,6 @@ with open(sys.argv[1], 'r') as fh:
 
 # preamble
 print("""\
-user nobody nobody;
-daemon off;
 error_log /dev/stdout info;
 pid /dev/null;
 
