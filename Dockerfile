@@ -1,4 +1,4 @@
-FROM python:3.13.7 AS build
+FROM python:3.14.0 AS build
 
 COPY src /app
 RUN python /app/nginx_config.py /app/sources.txt > /app/nginx.conf
